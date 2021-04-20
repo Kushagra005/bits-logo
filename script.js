@@ -16,7 +16,7 @@ function init() {
 
   const geometry = new THREE.CylinderGeometry(15, 15, 0, 64);
 
-  const texture = new THREE.TextureLoader().load("texture/logo.png");
+  const texture = new THREE.TextureLoader().load("./texture/logo.png");
   const material = new THREE.MeshBasicMaterial({ map: texture });
   cylinder = new THREE.Mesh(geometry, material);
   scene.add(cylinder);
